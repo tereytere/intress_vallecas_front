@@ -1,10 +1,13 @@
 import './App.css';
-import '../public/css/main.css'
-
+import SignIn from './components/common/SignIn';
+import Holidays from './components/common/Holidays';
+import '../src/styles/css/main.css';
 function App() {
   return (
     <div className="App">
-      
+     
+      <SignIn />
+      <Holidays />
     </div>
   );
 }
