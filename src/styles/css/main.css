@@ -1,0 +1,83 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+}
+.calendar .header .weekday {
+  font-weight: bold;
+  text-align: center;
+}
+.calendar .days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #eee;
+}
+.calendar .days .week {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.calendar .days .week .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.2857142857%;
+  height: 2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.calendar .days .week .day.holiday {
+  color: white;
+  background-color: #f44336;
+}
+.calendar .days .week .day.selected {
+  color: white;
+  background-color: #2196f3;
+}
+.calendar .footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+.calendar .footer .submit-button {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.calendar .footer .submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.calendar .footer .selected-days {
+  margin-bottom: 0.5rem;
+}
+.calendar .footer .selected-days ul {
+  margin-top: 0.25rem;
+  padding-left: 1rem;
+}
+.calendar .footer .sent-message {
+  font-weight: bold;
+  color: #2196f3;
+}/*# sourceMappingURL=main.css.map */
